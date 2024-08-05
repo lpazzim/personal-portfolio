@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "@/app/page.module.css";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
+              src="vercel.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -89,6 +89,16 @@ export default function Home() {
           <p>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
+        </a>
+
+        <a
+          href="/blog"
+          className={styles.card}
+        >
+          <h2>
+            Blog <span>-&gt;</span>
+          </h2>
+          <p>Go to the blog page.</p>
         </a>
       </div>
     </main>
