@@ -1,9 +1,15 @@
-import './index.css';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #BF4F74;
+`;
 
 export default function  BlogPage() {
   return (
     <div>
-      <h1>Blog Page</h1>
+      <Title>Blog Page</Title>
     </div>
   );
 }
